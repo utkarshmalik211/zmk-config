@@ -11,6 +11,8 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include "keypos_42keys.h"
 #include "mouse.dtsi"
+#include <dt-bindings/zmk/mouse.h>
+
 
 // Define Home row mods
 #define C_HM_L(k1, k2, k3, k4) &c_hm_l LGUI k1  &c_hm_l LALT k2  &c_hm_l LSHFT k3  &c_hm_l LCTRL k4
@@ -95,7 +97,7 @@
 &kp TAB    &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT	      &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &kp LCTRL  xxxxxx     U_MS_L  U_MS_U    U_MS_D    U_MS_R	      &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &sl ADJUST U_WH_L  U_WH_U    U_WH_D    U_WH_R  	      &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                              &MB2      &c_mo_num &kp SPACE	      &MB1       ______     &kp RALT
+                              &mkp RCLK &c_mo_num &kp SPACE	      &mkp LCLK  ______     &kp RALT
             >;
         };
 
