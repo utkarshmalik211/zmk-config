@@ -13,8 +13,8 @@
 #include "mouse.dtsi"
 
 // Define Home row mods
-#define C_HM_L(k1, k2, k3, k4) &c_hm_l LGUI k1  &c_hm_l LALT k2  &c_hm_l LCTRL k3  &c_hm_l LSHIFT k4
-#define C_HM_R(k1, k2, k3, k4) &c_hm_r RSHIFT k1  &c_hm_r RCTRL k2  &c_hm_r RALT k3  &c_hm_r RGUI k4
+#define C_HM_L(k1, k2, k3, k4) &c_hm_l LGUI k1  &c_hm_l LALT k2  &c_hm_l LSHFT k3  &c_hm_l LCTRL k4
+#define C_HM_R(k1, k2, k3, k4) &c_hm_r RCTRL k1  &c_hm_r RSHFT k2  &c_hm_r RALT k3  &c_hm_r RGUI k4
 #define C_LT(l1, k1) &c_lt l1 k1
 
 // divide keys in 2 halfs ( see keypod_42keys.h for key locations)
@@ -77,7 +77,7 @@
 &kp ESCAPE            &kp Q      &kp W  &kp E     &kp R           &kp T		       &kp Y    &kp U      &kp I      &kp O    &kp P     &kp BSPC
 &mt LEFT_CONTROL TAB  C_HM_L(A,      S,     D,        F)          &kp G		       &kp H    C_HM_R(J,      K,         L,       SEMI) &kp SQT
 &kp LSHFT             &kp Z      &kp X  &kp C     &kp V           &kp B		       &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_CONTROL
-			         &kp LSHFT        C_LT(NUM, TAB)  &kp SPACE	       &kp BSPC C_LT(NAV, RET) &kp RSHFT
+			         &kp LSHFT        C_LT(NUM, TAB)  &kp SPACE	       &kp RET C_LT(NAV, ESCAPE) &kp RSHFT
             >;
         };
 
@@ -86,7 +86,7 @@
 &kp TAB               &kp N1       &kp N2    &kp N3    &kp N4    &kp N5		&kp N6     &kp N7            &kp N8    &kp N9        &kp N0    &kp BSPC
 &mt LEFT_CONTROL TAB  C_HM_L(EXCL, DLLR,         LPAR,     RPAR) xxxxxx		&kp LEFT   C_HM_R(DOWN,      UP,       RIGHT,       COLON)     ______
 &kp LSHFT             &kp MINUS    &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH	&kp UNDER  &kp PLUS          &kp LBRC  &kp RBRC     &kp PIPE   &kp TILDE
-                                             &kp LGUI  ______    &kp SPACE	&kp BSPC   ______            &kp RSHFT
+                                             &kp LGUI  ______    &kp SPACE	&kp RET   ______            &kp RSHFT
             >;
         };
 
@@ -95,7 +95,7 @@
 &kp TAB    &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT	      &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &kp LCTRL  xxxxxx     U_MS_L  U_MS_U    U_MS_D    U_MS_R	      &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &sl ADJUST U_WH_L  U_WH_U    U_WH_D    U_WH_R  	      &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                              &kp LGUI  &c_mo_num &kp SPACE	      &kp RET    ______     &kp RALT
+                              &MB2      &c_mo_num &kp SPACE	      &MB1       ______     &kp RALT
             >;
         };
 
