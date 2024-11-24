@@ -15,8 +15,8 @@
 
 
 // Define Home row mods
-#define C_HM_L(k1, k2, k3, k4) &c_hm_l LGUI k1  &c_hm_l LALT k2  &c_hm_l LSHFT k3  &c_hm_l LCTRL k4
-#define C_HM_R(k1, k2, k3, k4) &c_hm_r RCTRL k1  &c_hm_r RSHFT k2  &c_hm_r RALT k3  &c_hm_r RGUI k4
+#define C_HM_L(k1, k2, k3, k4) &c_hm_l LSHFT k1  &c_hm_l LGUI k2  &c_hm_l LALT k3  &c_hm_l LCTRL k4
+#define C_HM_R(k1, k2, k3, k4) &c_hm_r RCTRL k1  &c_hm_r RALT k2  &c_hm_r RGUI k3  &c_hm_r RSHFT k4
 #define C_LT(l1, k1) &c_lt l1 k1
 
 // divide keys in 2 halfs ( see keypod_42keys.h for key locations)
